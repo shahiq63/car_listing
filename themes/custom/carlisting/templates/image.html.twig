@@ -1,0 +1,6 @@
+{% set classes = [
+  theme.settings.image_shape ? theme.settings.image_shape,
+  theme.settings.image_responsive ? 'img-responsive',
+  'image_right'
+] %}
+<img {{ attributes.addClass(classes) }} />

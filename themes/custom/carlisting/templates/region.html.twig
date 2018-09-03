@@ -1,0 +1,26 @@
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+    ]
+%}
+{%
+  set classes_for_sidebar = [
+    'region',
+    'region-' ~ region|clean_class,
+    'custom_sidebar',
+  ]
+%}
+{% if region=="sidebar_second" %}
+  {% if content %}
+    <div {{ attributes.addClass(classes_for_sidebar) }}>
+    {{ content }}
+  </div>
+{% endif %}
+{% else %}
+    {% if content %}
+    <div{{ attributes.addClass(classes) }}>
+    {{ content }}
+  </div>
+{% endif %}
+{% endif %}

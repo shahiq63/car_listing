@@ -1,0 +1,39 @@
+{%
+  set classes = [
+    'field',
+    'field--name-' ~ field_name|clean_class,
+    'field--type-' ~ field_type|clean_class,
+    'field--label-' ~ label_display,
+  ]
+%}
+{%
+  set title_classes = [
+    'field--label',
+    label_display == 'visually_hidden' ? 'sr-only',
+  ]
+%}
+{% for item in items %}
+  {% if label=="Profile Picture"%}
+  <div class="row">
+    <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+  </div>
+  <hr>
+  {% elseif label=="Images" %}
+    <img height="100px" width="100px" src={{file_url(item.content['#item'].entity.uri.value)}}>
+  {% endif %}
+{% endfor %}
+{% for item in items %}
+  {% if label=="Price"%}
+  <hr>
+  <div style="color:orange"><h3><b>Rs {{ item.content }}</b></h3></div>
+  <hr>
+  <div>-Details</div>
+  {% elseif label=="Make" or label=="Year" or label=="Car Type"%}
+    <div class="col-sm-3"><h4 style="color:black">{{label}}</h4></div>
+    <div class="col-sm-2"><h4 style="color:black">{{ item.content }}</h4></div>
+    <div class="col-sm-1"></div>
+  {% elseif label=="Model" or label=="Mileage" or label=="Color"%}
+    <div class="col-sm-3"><h4 style="color:black">{{label}}</h4></div>
+    <div class="col-sm-2"><h4 style="color:black">{{ item.content }}</h4></div>
+  {% endif %}
+{% endfor %}

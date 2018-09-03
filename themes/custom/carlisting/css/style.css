@@ -1,0 +1,16 @@
+.input_width{
+  width: 100%;
+}
+.image_right{
+  margin-right: 10px;
+}
+.custom_sidebar{
+  width:400px;
+  margin-top:50px;
+  margin-left:55px;
+}
+.form-inline .form-control {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
