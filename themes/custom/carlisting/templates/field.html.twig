@@ -20,20 +20,20 @@
   <hr>
   {% elseif label=="Images" %}
     <img height="100px" width="100px" src={{file_url(item.content['#item'].entity.uri.value)}}>
-  {% endif %}
-{% endfor %}
-{% for item in items %}
-  {% if label=="Price"%}
+  {% elseif label=="Price"%}
   <hr>
   <div style="color:orange"><h3><b>Rs {{ item.content }}</b></h3></div>
   <hr>
   <div>-Details</div>
-  {% elseif label=="Make" or label=="Year" or label=="Car Type"%}
+  {% elseif label=="Make" or label=="Mileage" or label=="Color"%}
     <div class="col-sm-3"><h4 style="color:black">{{label}}</h4></div>
     <div class="col-sm-2"><h4 style="color:black">{{ item.content }}</h4></div>
     <div class="col-sm-1"></div>
-  {% elseif label=="Model" or label=="Mileage" or label=="Color"%}
+  {% elseif label=="Model" or label=="Year" or label=="Car Type"%}
     <div class="col-sm-3"><h4 style="color:black">{{label}}</h4></div>
     <div class="col-sm-2"><h4 style="color:black">{{ item.content }}</h4></div>
-  {% endif %}
+  {% else %}
+    <div>{{label}}</div>
+    <div>{{item.content}}</div>
+{% endif %}
 {% endfor %}

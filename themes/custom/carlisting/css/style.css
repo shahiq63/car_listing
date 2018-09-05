@@ -1,10 +1,10 @@
-.input_width{
+.input_width {
   width: 100%;
 }
-.image_right{
+.image_right {
   margin-right: 10px;
 }
-.custom_sidebar{
+.custom_sidebar {
   width:400px;
   margin-top:50px;
   margin-left:55px;
@@ -13,4 +13,27 @@
   display: inline-block;
   width: 100%;
   vertical-align: middle;
+}
+.price-color-latest {
+  color: green;
+}
+.price-color-latest::before {
+  content: "PKR ";
+}
+.inline-elements {
+  display: inline-block;
+  width: 20%;
+}
+.title-color-latest {
+  color: blue;
+}
+.form-actions .btn, .form-actions .btn-group {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-top: 10px;
 }
