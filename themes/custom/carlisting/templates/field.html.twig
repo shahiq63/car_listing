@@ -32,8 +32,10 @@
   {% elseif label=="Model" or label=="Year" or label=="Car Type"%}
     <div class="col-sm-3"><h4 style="color:black">{{label}}</h4></div>
     <div class="col-sm-2"><h4 style="color:black">{{ item.content }}</h4></div>
+  {% elseif label=="Body"%}
+    <div{{ item.attributes.addClass('field--item') }}>{{item.content}}</div>
   {% else %}
-    <div>{{label}}</div>
-    <div>{{item.content}}</div>
+    <div{{ title_attributes.addClass(title_classes) }}>{{label}}</div>
+    <div{{ item.attributes.addClass('field--item') }}>{{item.content}}</div>
 {% endif %}
 {% endfor %}

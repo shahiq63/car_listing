@@ -37,9 +37,28 @@
   vertical-align: middle;
   margin-top: 10px;
 }
-.form-item-field-price-value-max label{
+.form-item-field-price-value-max label {
   visibility: hidden;
 }
-.form-item-field-year-value-max label{
+.form-item-field-year-value-max label {
   visibility: hidden;
+}
+.views-field-field-name .field-content {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  font-size: 20px;
+  width: 92%;
+}
+.views-field-field-job-title .field-content {
+  background-color: black;
+  color: white;
+  width: 92%;
+  padding-left: 20px;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  height: 32px;
+}
+.views-field-field-description .field-content {
+  display: none;
 }
