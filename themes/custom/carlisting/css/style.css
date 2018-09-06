@@ -22,7 +22,7 @@
 }
 .inline-elements {
   display: inline-block;
-  width: 20%;
+  width: 46%;
 }
 .title-color-latest {
   color: blue;
@@ -36,4 +36,10 @@
   margin-bottom: 0;
   vertical-align: middle;
   margin-top: 10px;
+}
+.form-item-field-price-value-max label{
+  visibility: hidden;
+}
+.form-item-field-year-value-max label{
+  visibility: hidden;
 }
