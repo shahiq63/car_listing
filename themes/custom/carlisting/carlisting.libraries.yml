@@ -7,3 +7,4 @@ global-style:
     js/jquery.custom.js: {}
   dependencies:
     - core/jquery
+    - core/drupal.dialog

@@ -62,3 +62,21 @@
 .views-field-field-description .field-content {
   display: none;
 }
+#webform-submission-contact-form-node-21-add-form #edit-name--wrapper {
+  display: inline-block;
+  width: 49%;
+}
+#webform-submission-contact-form-node-21-add-form .form-item-email {
+  display: inline-block;
+  width: 50%;
+}
+#block-views-block-contact-info-block-1 h2 {
+  display: none;
+}
+#block-views-block-contact-info-block-1 .field--label {
+  color: red;
+}
+#block-views-block-contact-info-block-1 .field--item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
