@@ -1,0 +1,11 @@
+{% extends "input.html.twig" %}
+{% spaceless %}
+  {%
+    set classes = [
+      'form-control',
+    ]
+  %}
+  {% block input %}
+    <input class="form-control input_width" autocomplete="off" {{ attributes.addClass(classes) }}
+  {% endblock %}
+{% endspaceless %}

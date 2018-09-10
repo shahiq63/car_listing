@@ -1,0 +1,82 @@
+.input_width {
+  width: 100%;
+}
+.image_right {
+  margin-right: 10px;
+}
+.custom_sidebar {
+  width:400px;
+  margin-top:50px;
+  margin-left:55px;
+}
+.form-inline .form-control {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.price-color-latest {
+  color: green;
+}
+.price-color-latest::before {
+  content: "PKR ";
+}
+.inline-elements {
+  display: inline-block;
+  width: 46%;
+}
+.title-color-latest {
+  color: blue;
+}
+.form-actions .btn, .form-actions .btn-group {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+.form-item-field-price-value-max label {
+  visibility: hidden;
+}
+.form-item-field-year-value-max label {
+  visibility: hidden;
+}
+.views-field-field-name .field-content {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  font-size: 20px;
+  width: 92%;
+}
+.views-field-field-job-title .field-content {
+  background-color: black;
+  color: white;
+  width: 92%;
+  padding-left: 20px;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  height: 32px;
+}
+.views-field-field-description .field-content {
+  display: none;
+}
+#webform-submission-contact-form-node-21-add-form #edit-name--wrapper {
+  display: inline-block;
+  width: 49%;
+}
+#webform-submission-contact-form-node-21-add-form .form-item-email {
+  display: inline-block;
+  width: 50%;
+}
+#block-views-block-contact-info-block-1 h2 {
+  display: none;
+}
+#block-views-block-contact-info-block-1 .field--label {
+  color: red;
+}
+#block-views-block-contact-info-block-1 .field--item {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

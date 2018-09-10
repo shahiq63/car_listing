@@ -1,0 +1,10 @@
+global-style:
+  version: 1.0.0
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/jquery.custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.dialog

@@ -1,0 +1,4 @@
+<?php
+function carlisting_preprocess_node(&$variables) {
+  $variables['node_type']=$variables['node']->getType();
+}
