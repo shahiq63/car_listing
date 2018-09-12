@@ -80,3 +80,20 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
+#search-block-form button {
+  display: none;
+}
+#search-block-form input {
+  margin-left: 10px;
+  margin-top: 3%;
+  border-radius: 20px;
+}
+#views-exposed-form-search-car-ads-page-1 button {
+  display: none;
+}
+#views-exposed-form-search-car-ads-page-1 input {
+  border-radius: 10px;
+  margin-top: -3px;
+  width: 70%;
+  margin-left: 5px;
+}
