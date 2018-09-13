@@ -97,3 +97,9 @@
   width: 70%;
   margin-left: 5px;
 }
+.comment-forbidden {
+  display: none !important;
+}
+mark {
+  display: none;
+}

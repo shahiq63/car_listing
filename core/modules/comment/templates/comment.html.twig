@@ -74,8 +74,7 @@
     indicator here would break the render cache.
   #}
   <mark class="hidden" data-comment-timestamp="{{ new_indicator_timestamp }}"></mark>
-
-  <footer>
+    <footer>
     {{ user_picture }}
     <p>{{ submitted }}</p>
 
@@ -87,8 +86,7 @@
     {% if parent %}
       <p class="visually-hidden">{{ parent }}</p>
     {% endif %}
-
-    {{ permalink }}
+    <hr>
   </footer>
 
   <div{{ content_attributes }}>
@@ -99,4 +97,5 @@
     {% endif %}
     {{ content }}
   </div>
+
 </article>

@@ -23,4 +23,11 @@ jQuery(function($) {
   $('.views-field-field-pro').hover(function() {
     $(this).css('cursor','pointer');
   });
+  $('.navbar-nav').find('.dropdown').hover(function(){
+    $('.dropdown').addClass('open');
+  },function(){
+    $('.dropdown').removeClass('open');
+  });
+  $('#comment-form').parent().parent().addClass('col-sm-12');
+  $('.js-comment').parent().addClass('col-sm-12');
 });

@@ -29,13 +29,14 @@
 <section{{ attributes }}>
   {% if comments and not label_hidden %}
     {{ title_prefix }}
+    <hr>
     <h2{{ title_attributes }}>{{ label }}</h2>
     {{ title_suffix }}
   {% endif %}
-
+  <hr>
   {{ comments }}
-
   {% if comment_form %}
+    <hr>
     <h2{{ content_attributes }}>{{ 'Add new comment'|t }}</h2>
     {{ comment_form }}
   {% endif %}
