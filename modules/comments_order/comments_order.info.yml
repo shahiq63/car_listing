@@ -1,0 +1,12 @@
+name: Comments order
+type: module
+description: This module allows to set order for node comments
+# core: 8.x
+dependencies:
+  - comment
+
+# Information added by Drupal.org packaging script on 2018-07-19
+version: '8.x-1.0'
+core: '8.x'
+project: 'comments_order'
+datestamp: 1532024284
