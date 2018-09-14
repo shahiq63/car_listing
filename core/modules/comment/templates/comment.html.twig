@@ -77,16 +77,9 @@
     <footer>
     {{ user_picture }}
     <p>{{ submitted }}</p>
-
-    {#
-      Indicate the semantic relationship between parent and child comments for
-      accessibility. The list is difficult to navigate in a screen reader
-      without this information.
-    #}
     {% if parent %}
       <p class="visually-hidden">{{ parent }}</p>
     {% endif %}
-    <hr>
   </footer>
 
   <div{{ content_attributes }}>
@@ -97,5 +90,6 @@
     {% endif %}
     {{ content }}
   </div>
+  <hr>
 
 </article>

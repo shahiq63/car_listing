@@ -279,9 +279,14 @@ class UserController extends ControllerBase {
    */
   public function logout() {
     user_logout();
-    return $this->redirect('<front>');
+    //return $this->redirect('<front>');
+    if(isset($_SERVER['HTTP_REFERER'])) {
+      header('Location: '.$_SERVER['HTTP_REFERER']);
+    } else {
+      header('Location: index.php');
+    }
+    exit;
   }
-
   /**
    * Confirms cancelling a user account via an email link.
    *

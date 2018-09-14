@@ -2,3 +2,8 @@
 function carlisting_preprocess_node(&$variables) {
   $variables['node_type']=$variables['node']->getType();
 }
+function carlisting_preprocess_comment__field_comments__car_ad(&$variables) {
+  $extract_date=$variables['created'][0]['#markup'];
+  $spl=explode(" ",$extract_date);
+  $variables['date']=$spl[1];
+}

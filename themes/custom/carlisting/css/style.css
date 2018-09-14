@@ -103,3 +103,24 @@
 mark {
   display: none;
 }
+.car-ad .js-comment .field--label {
+  display: none;
+}
+.article .js-comment .field--label {
+  display: none;
+}
+.car-ad .js-comment .field--item {
+  margin-bottom: 5px;
+}
+.car-ad .js-comment .permalink {
+  display: none;
+}
+.article .js-comment .links .comment-reply {
+  display: none;
+}
+#edit-comment-body-0-format {
+  display: none;
+}
+.links .comment-add {
+  display: none;
+}

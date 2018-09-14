@@ -30,4 +30,12 @@ jQuery(function($) {
   });
   $('#comment-form').parent().parent().addClass('col-sm-12');
   $('.js-comment').parent().addClass('col-sm-12');
+  $("#comment-form").hide();
+  $('#comment-form #edit-submit').text("Place Comment");
+  $('.show_comment').click(function(){
+    $(this).text(function(i, v){
+      return v === 'Add Comment' ? 'Hide Comment' : 'Add Comment'
+    });
+    $("#comment-form").toggle();
+  });
 });
