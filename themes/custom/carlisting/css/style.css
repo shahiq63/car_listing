@@ -124,3 +124,66 @@ mark {
 .links .comment-add {
   display: none;
 }
+.js-form-item-field-make-value {
+  width: 44%;
+}
+.js-form-item-field-model-value {
+  width: 46%;
+}
+.form-item-title {
+  width: 63%;
+}
+.view-compare-right-side-car .view-content .views-view-grid .views-row .views-col {
+  width: 100% !important;
+}
+.view-duplicate-of-compare-left-side-car .view-content .views-view-grid .views-row .views-col {
+  width: 100% !important;
+}
+.view-compare-right-side-car .views-field-title {
+  font-size: 20px;
+}
+.view-compare-right-side-car .views-field-field-price {
+  font-size: 20px;
+}
+.view-compare-right-side-car .field-content {
+  font-size: 20px;
+}
+.view-duplicate-of-compare-left-side-car .views-field-field-price {
+  font-size: 20px;
+}
+.view-duplicate-of-compare-left-side-car .views-field-title {
+  font-size: 20px;
+}
+.view-duplicate-of-compare-left-side-car .field-content {
+  font-size: 20px;
+}
+#block-views-block-duplicate-of-compare-left-side-car-block-1 .price-color-latest {
+  display: inline-block;
+}
+#block-views-block-duplicate-of-compare-left-side-car-block-1 .field-content {
+  display: inline-block;
+}
+#block-views-block-duplicate-of-compare-left-side-car-block-1 .views-label {
+  font-size: 20px;
+}
+#block-views-block-compare-right-side-car-block-1 .price-color-latest {
+  display: inline-block;
+}
+#block-views-block-compare-right-side-car-block-1 .field-content {
+  display: inline-block;
+}
+#block-views-block-compare-right-side-car-block-1 .views-label {
+  font-size: 20px;
+}
+#block-views-block-compare-right-side-car-block-1 .views-field {
+  margin-top: 10px;
+}
+#block-views-block-duplicate-of-compare-left-side-car-block-1 .views-field {
+  margin-top: 10px;
+}
+#block-views-block-compare-right-side-car-block-1 .form-submit {
+  margin-top: 20px;
+}
+#block-views-block-duplicate-of-compare-left-side-car-block-1 .form-submit {
+  margin-top: 20px;
+}
