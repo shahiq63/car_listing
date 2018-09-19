@@ -39,3 +39,40 @@ jQuery(function($) {
     $("#comment-form").toggle();
   });
 });
+var left;
+var right;
+var check=0;
+jQuery( document ).ajaxStart(function($) {
+  jQuery('#block-views-block-compare-right-side-car-block-1').find('.con_present').hide();
+  jQuery('#block-views-block-duplicate-of-compare-left-side-car-block-1').find('.con_present').hide();
+  jQuery('#views-exposed-form-compare-right-side-car-block-1 .js-form-submit').click(function(){
+     left=jQuery('#views-exposed-form-compare-right-side-car-block-1').find("input[name=title]").val();
+     right=jQuery('#views-exposed-form-duplicate-of-compare-left-side-car-block-1').find("input[name=title]").val();
+    if(left==right) {
+      check=1;
+    }else {
+      check=0;
+    }
+  });
+  jQuery('#views-exposed-form-duplicate-of-compare-left-side-car-block-1 .js-form-submit').click(function(){
+     left=jQuery('#views-exposed-form-compare-right-side-car-block-1').find("input[name=title]").val();
+     right=jQuery('#views-exposed-form-duplicate-of-compare-left-side-car-block-1').find("input[name=title]").val();
+    if(right==left) {
+      check=2;
+    }else {
+      check=0;
+   }
+ });
+});
+jQuery( document ).ajaxComplete(function($) {
+  if(check==1) {
+    jQuery('#views-exposed-form-compare-right-side-car-block-1').find("input[name=title]").val('');
+    jQuery('#block-views-block-compare-right-side-car-block-1').find('.view-content').hide();
+    jQuery('#block-views-block-compare-right-side-car-block-1').append('<div class="con_present"></div>');
+  }
+  if(check==2) {
+    jQuery('#views-exposed-form-duplicate-of-compare-left-side-car-block-1').find("input[name=title]").val('');
+    jQuery('#block-views-block-duplicate-of-compare-left-side-car-block-1').find('.view-content').hide();
+    jQuery('#block-views-block-duplicate-of-compare-left-side-car-block-1').append('<div class="con_present"></div>');
+  }
+});

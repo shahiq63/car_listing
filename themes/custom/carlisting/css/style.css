@@ -187,3 +187,6 @@ mark {
 #block-views-block-duplicate-of-compare-left-side-car-block-1 .form-submit {
   margin-top: 20px;
 }
+.con_present::after {
+  content: "You can view this result on other side";
+}
